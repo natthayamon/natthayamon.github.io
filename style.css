@@ -1,0 +1,44 @@
+body { margin: 0; background: #ddd; font-family: "Arial,Heletica", sans-serif; }
+.page {
+ max-width: 850px; margin: auto; padding: 30px;
+ background: linear-gradient(#242424 0 260px, #fff 260px);
+ display: grid; grid-template-columns: 1fr 1.4fr; gap: 20px;
+}
+.photo {
+ width: 220px; height: 260px; object-fit: cover;
+ border-radius: 50%; border: 4px solid #ddd;
+ display: block; margin: 0 auto -60px; position: relative; z-index: 1;
+}
+.card {
+ background: #e8e8e8; border-radius: 25px;
+ padding: 20px; margin-bottom: 20px;
+}
+.left .card:first-of-type { padding-top: 70px; }
+.card h2 {
+ margin: 10px 0; font-size: 1.2em;
+ border-bottom: 2px dotted #333; padding-bottom: 6px;
+}
+.card h2::before { content: "✦ "; }
+.name { color: white; height: 240px; }
+.name h1 { margin: 10px 0 0; font-size: 2.4em; }
+.name h3 { margin: 10px 0; font-size: 1.8em; font-weight: 400; }
+.pill-outline {
+ display: inline-block; border: 3px solid white;
+ border-radius: 30px; padding: 6px 30px; font-weight: 700;
+}
+.pill {
+ display: inline-block; background: #222; color: white;
+ border-radius: 30px; padding: 8px 25px;
+ font-weight: 700; margin-bottom: 10px;
+}
+.skills { display: flex; justify-content: space-around; text-align: center; }
+.circle {
+ --p: 80; width: 70px; height: 70px; border-radius: 50%;
+ background: conic-gradient(#222 calc(var(--p) * 1%), #999 0);
+ display: grid; place-items: center; margin: 0 auto 6px;
+}
+.circle span {
+ width: 54px; height: 54px; border-radius: 50%;
+ background: #e8e8e8; display: grid; place-items: center; font-size: 0.85em;
+}
+@media (max-width: 700px) { .page { grid-template-columns: 1fr; } }
