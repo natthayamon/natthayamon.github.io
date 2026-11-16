@@ -44,4 +44,8 @@ body { margin: 0; background: #ddd; font-family: "Arial,Heletica", sans-serif; }
 .edu { margin: 0; padding-left: 20px; }
 .edu li { margin-bottom: 12px; }
 .edu b { font-size: 1.05em; }
+.bar { margin-bottom: 14px; }
+.bar span { display: block; margin-bottom: 4px; font-weight: 700; }
+.track { background: #999; border-radius: 10px; height: 12px; }
+.fill { background: #222; height: 100%; border-radius: 10px; }
 @media (max-width: 700px) { .page { grid-template-columns: 1fr; } }
